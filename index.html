@@ -1,1 +1,360 @@
-redesign
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Redesign</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Montserrat&display=swap" rel="stylesheet" />
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="img/ratna.png" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="https://wa.me/+6281294341215">dapur<span class="text-warning">Ratna</span></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#menu" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Menu </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#menu">Sate Bandeng</a></li>
+                <li><a class="dropdown-item" href="#menu">Nasi Kabsah</a></li>
+                <li><a class="dropdown-item" href="#menu">Snackbox</a></li>
+                <li><a class="dropdown-item" href="#menu-special">Kue Kering</a></li>
+                <li><a class="dropdown-item" href="#menu-special">Hampers</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Carousel -->
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item bg-img-1 active">
+          <!-- <img src="img/01.jpg" class="d-block w-100" alt="..." /> -->
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Selamat Datang</h5>
+            <p>Dapur Ratna menjual aneka isi snackbox seperti Makaroni Brulee, Muffin, Cheeseroll, Portuguese Egg Tart dan lainnya. Selain itu kami juga menjual Sate Bandeng dan Paket Nasi pesanan untuk acara.</p>
+            <a href="menu.html" class="btn btn-outline-warning mt-5">Explore Menu</a>
+          </div>
+        </div>
+        <div class="carousel-item bg-img-2">
+          <!-- <img src="img/02.jpg" class="d-block w-100" alt="..." /> -->
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Website Dapur Ratna</h5>
+            <p>Dapur Ratna menjual aneka isi snackbox seperti Makaroni Brulee, Muffin, Cheeseroll, Portuguese Egg Tart dan lainnya. Selain itu kami juga menjual Sate Bandeng dan Paket Nasi pesanan untuk acara.</p>
+            <a href="#" class="btn btn-outline-warning mt-5">Explore Menu</a>
+          </div>
+        </div>
+        <div class="carousel-item bg-img-3">
+          <!-- <img src="img/03.jpg" class="d-block w-100" alt="..." /> -->
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Silakan Pesan Sekarang</h5>
+            <p>Dapur Ratna menjual aneka isi snackbox seperti Makaroni Brulee, Muffin, Cheeseroll, Portuguese Egg Tart dan lainnya. Selain itu kami juga menjual Sate Bandeng dan Paket Nasi pesanan untuk acara.</p>
+            <a href="#" class="btn btn-outline-warning mt-5">Explore Menu</a>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!-- About -->
+    <section id="about" class="about section-padding">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-4 col-md-12 col-12 mt-md-5">
+            <div class="about-img">
+              <img src="img/about.png" alt="" class="img-fluid" />
+            </div>
+          </div>
+          <div class="col-lg-8 col-md-12 col-12 ps-lg-5 mt-md-5">
+            <div class="about-text">
+              <h2 class="display-3 border-bottom">About <span class="text-warning">Dapur Ratna</span></h2>
+              <p>
+                Berdiri pada tahun 2020, Dapur Ratna merintis usahanya dengan membuat nasi khas Timur Tengah seperti Nasi Kabsah dan Nasi Mandi baik dengan lauk daging kambing ataupun ayam.
+                <br /><br />
+                Masih lekat dengan bumbu rempah, dalam perkembangannya Ibu Ratna sebagai owner Dapur Ratna membuat kudapan seperti Karipap Pusing, Samosa dan Roti Jala yang dinikmati dengan kari ayam.
+                <br /><br />
+                Selain samosa dan roti jala, Dapur Ratna juga menyediakan kudapan lainnya yang bersertifikasi halal seperti Rissole, Portuguese Egg Tart (manis dan asin), Spageti Brulee, Macaroni Schotel, Klappertaart serta masih banyak
+                pilihan kue lainnya. Hampers berupa paket nasi kabsah (kambing dan ayam), nasi mandi (kambing dan ayam), sate bandeng dan aneka kue kering juga menjadi andalan produksi Dapur Ratna di bulan Ramadhan. Untuk saat ini, Dapur
+                Ratna telah melayani permintaan dari beberapa instansi dan universitas di sekitar wilayah Jakarta Selatan, Depok, dan Tangerang Selatan.
+                <br /><br />
+                Dalam usahanya, Dapur Ratna menjadi anggota UMKM yg dibina oleh Jakpreneur Sudin Jakarta Selatan sekaligus mendapat izin usaha.
+              </p>
+              <a href="#" class="btn btn-warning">Order Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Jakpreneur -->
+    <section id="jakpreneur" class="section-padding bg-light border-top">
+      <div class="container">
+        <div class="row align-items-center text-center">
+          <h2 class="col-12 col-md-6 col-lg-6 display-2 text-dark lead">
+            <span class="text-warning">Dapur Ratna</span><br />
+            a part of
+          </h2>
+          <div class="col-12 col-md-6 col-lg-6">
+            <img src="img/jakpreneur.png" alt="" class="img-fluid" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Univ Gunadarma -->
+    <section id="gunadarma" class="section-padding bg-light border-bottom border-top">
+      <div class="container">
+        <div class="row align-items-center text-center">
+          <div class="col-12 col-md-6 col-lg-6">
+            <img src="img/gundar.png" alt="" class="img-fluid" />
+          </div>
+          <h2 class="col-12 col-md-6 col-lg-6 display-2 text-dark lead">a loyal customer <br /><span class="text-warning">Dapur Ratna</span></h2>
+        </div>
+      </div>
+    </section>
+
+    <!-- Menu DR-->
+    <section id="menu" class="menu section-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="section-header text-center pb-5">
+              <h2 class="display-3 border-bottom">Menu <span class="text-warning">Dapur Ratna</span></h2>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 col-md-12 col-lg-4">
+            <div class="card text-light text-center bg-white pb-2">
+              <div class="card-body text-dark">
+                <div class="img-area mb-4">
+                  <img src="img/kabsah.jpg" alt="" class="img-fluid" />
+                </div>
+                <h3 class="card-title">Nasi Kabsah</h3>
+                <p class="lead">Nasi Kabsah merupakan hidangan nasi yang berasal dari Timur Tengah dimana dikenal sebagai hidangan nasi ...</p>
+                <button class="btn bg-warning text-dark">See Details</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-12 col-lg-4">
+            <div class="card text-light text-center bg-white pb-2">
+              <div class="card-body text-dark">
+                <div class="img-area mb-4">
+                  <img src="img/bandeng.jpg" alt="" class="img-fluid" />
+                </div>
+                <h3 class="card-title">Sate Bandeng</h3>
+                <p class="lead">Sate Bandeng Raos merupakan salah satu kuliner khas Banten dengan perpaduan daging ikan bandeng, santan, dan ...</p>
+                <a href="menu.html"><button class="btn bg-warning text-dark">See Details</button></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-12 col-lg-4">
+            <div class="card text-light text-center bg-white pb-2">
+              <div class="card-body text-dark">
+                <div class="img-area mb-4">
+                  <img src="img/snackbox.jpg" alt="" class="img-fluid" />
+                </div>
+                <h3 class="card-title">Snackbox</h3>
+                <p class="lead">Tersedia aneka pilihan isi snackbox dari berbagai varian rasa seperti manis, asin, gurih yang dapat dipilih untuk ...</p>
+                <button class="btn bg-warning text-dark">See Details</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Menu SD-->
+    <section id="menu-special" class="menu section-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="section-header text-center pb-5">
+              <h2 class="display-3 border-bottom">Menu <span class="text-warning">Special Day</span></h2>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-md-center">
+          <div class="col-12 col-md-12 col-lg-4">
+            <div class="card text-light text-center bg-white pb-2">
+              <div class="card-body text-dark">
+                <div class="img-area mb-4">
+                  <img src="img/cookies.jpg" alt="" class="img-fluid" />
+                </div>
+                <h3 class="card-title">Kue Kering</h3>
+                <p class="lead">Jangan lewatkan aneka kue kering spesial kami yang dibuat dengan resep dan bahan-bahan berkualitas yang dapat dinikmati bersama keluarga atau pasangan tercinta di momen spesial Anda.</p>
+                <button class="btn bg-warning text-dark">See Details</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-12 col-lg-4">
+            <div class="card text-light text-center bg-white pb-2">
+              <div class="card-body text-dark">
+                <div class="img-area mb-4">
+                  <img src="img/hampers.jpg" alt="" class="img-fluid" />
+                </div>
+                <h3 class="card-title">Hampers</h3>
+                <p class="lead">Jangan lewatkan aneka hampers spesial kami yang dibuat dengan resep dan bahan-bahan berkualitas yang dapat dinikmati bersama keluarga atau pasangan tercinta di momen spesial Anda.</p>
+                <button class="btn bg-warning text-dark">See Details</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact section-padding bg-light border-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="section-header text-center pb-5">
+              <h2 class="display-3 border-bottom">Contact <span class="text-warning">Dapur Ratna</span></h2>
+            </div>
+          </div>
+        </div>
+        <div class="row align-items-center justify-content-md-center">
+          <div class="col-12 col-md-9 col-lg-4">
+            <div class="card text-center mx-3">
+              <div class="card-body">
+                <img src="img/picture.jpg" alt="" class="img-fluid rounded-circle" />
+                <h3 class="card-title py-2 text-warning">Ratna Astuti Dewi</h3>
+                <p class="card-text">Mau langsung order atau mau tanya-tanya dulu? Jangan ragu untuk menghubungi via WhatsApp<i class="bi bi-emoji-smile text-dark mx-2"></i></p>
+
+                <p class="socials">
+                  <a href="https://wa.me/+6281294341215" class="socmed"><i class="bi bi-whatsapp text-light mx-2"></i></a>
+                  <a href="https://g.co/kgs/vC8Yvh" class="socmed"><i class="bi bi-envelope text-light mx-2"></i></a>
+                  <a href="https://instagram.com/dapur__ratna " class="socmed"><i class="bi bi-instagram text-light mx-2"></i></a>
+                  <a href="https://www.tiktok.com/@satebandeng.raos" class="socmed"><i class="bi bi-tiktok text-light mx-2"></i></a>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-9 col-lg-8">
+            <h3 class="mb-4">Contact Info</h3>
+            <table class="table">
+              <tr>
+                <td><strong>Address</strong></td>
+                <td>Jl Alamanda D 16 No 24, Pondok Cabe Ilir, Pamulang, South Tangerang City, Banten, 15418</td>
+              </tr>
+              <tr>
+                <td><strong>Email</strong></td>
+                <td>ratnadhewi69@gmail.com</td>
+              </tr>
+              <tr>
+                <td><strong>Whatsapp</strong></td>
+                <td>081294341215</td>
+              </tr>
+              <tr>
+                <td><strong>Instagram</strong></td>
+                <td>@dapur__ratna</td>
+              </tr>
+            </table>
+            <br />
+            <h3 class="mb-4">Frequently Asked Questions</h3>
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+              <div class="accordion-item">
+                <p class="accordion-header" id="flush-headingOne">
+                  <button class="rounded-2 accordion-button collapsed bg-warning" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                    <i class="bi bi-1-circle-fill text-dark mx-2"></i>Bagaimana cara memesan?
+                  </button>
+                </p>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">
+                    <ol>
+                      <li>Pilih kue apa saja yang Anda inginkan beserta jumlahnya</li>
+                      <li>Tekan tombol di bawah untuk menghubungi kami via WhatsApp</li>
+                      <li>Konfirmasi pesanan Anda</li>
+                      <li>Lakukan pembayaran</li>
+                      <li>Kami kirim ke tempat Anda!</li>
+                    </ol>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <p class="accordion-header" id="flush-headingTwo">
+                  <button class="rounded-2 accordion-button collapsed bg-warning bg-opacity-75" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                    <i class="bi bi-2-circle-fill text-dark mx-2"></i>Apakah DR melayanani pesanan se-Jabodetabek?
+                  </button>
+                </p>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">
+                    Khusus menu <span class="text-warning">Sate Bandeng</span> kami melayani pesanan dari wilayah <b>Jabodetabek</b>, namun untuk menu lainnya seperti <b>Snackbox dan Nasi Kabsah</b>, kami hanya melayani pesanan sekitar
+                    wilayah <b>Jakarta Selatan, Depok, dan Tangerang Selatan</b>.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <p class="accordion-header" id="flush-headingThree">
+                  <button class="rounded-2 accordion-button collapsed bg-warning bg-opacity-50" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                    <i class="bi bi-3-circle-fill text-dark mx-2"></i>DR melayani pembayaran via apa?
+                  </button>
+                </p>
+                <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">Kami menerima pembayaran via <b>Gopay</b> dan transfer via <b>Bank Mandiri</b>.</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <p class="accordion-header" id="flush-headingFour">
+                  <button class="rounded-2 accordion-button collapsed bg-warning bg-opacity-25" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                    <i class="bi bi-4-circle-fill text-dark mx-2"></i>Kapan harus memesan?
+                  </button>
+                </p>
+                <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">
+                    Untuk pemesanan Snackbox & Nasi Kabsah sebaiknya melakukan pemesanan <b>Maximal H-3 sebelum</b> acara kamu ya! <b>Khusus untuk pemesanan Sate Bandeng, kamu bisa pesan Pagi ini, Siang sampai di tempat kamu</b>.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark px-1 py-5">
+      <div class="container">
+        <p class="m-0 text-light text-center">Project Based Learning Yayasan Plan International Indonesia &copy; Difa Daulati 2023</p>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  </body>
+</html>
