@@ -30,7 +30,7 @@ body {
 }
 
 .carousel-caption {
-  bottom: 370px;
+  bottom: 300px;
   z-index: 5;
 }
 
@@ -153,6 +153,11 @@ a.socmed {
   #about h2 {
     text-align: center;
     margin-bottom: 30px;
+  }
+
+  #menu h3,
+  #menu-special h3 {
+    font-size: 35px;
   }
 
   #contact h3 {
