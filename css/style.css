@@ -11,15 +11,15 @@ body {
 }
 
 .bg-img-1 {
-  background-image: url(../img/01.jpg);
+  background-image: url(../img/snackbox-klappertaart.jpg);
 }
 
 .bg-img-2 {
-  background-image: url(../img/02.jpg);
+  background-image: url(../img/snackbox-portuguese-egg-tart-sweet.jpg);
 }
 
 .bg-img-3 {
-  background-image: url(../img/03.jpg);
+  background-image: url(../img/snackbox-portuguese-egg-tart-savory.jpg);
 }
 
 .carousel-item {
@@ -107,6 +107,16 @@ h5:hover {
 .hub img:hover {
   translate: -1rem;
   transition: 0.5s;
+}
+
+#about img {
+  border-radius: 40% 0%;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+
+#about img:hover {
+  border-radius: 15px;
 }
 
 #about h2 {
